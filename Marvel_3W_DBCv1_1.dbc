@@ -1,0 +1,308 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MARVEL_3WL5_CAN_V0_3
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ pIn_OCD_WarningCurrent : 0|16@1+ (1,0) [0|0] "A" Vector__XXX
+ SG_ pIn_OCD_ErrorCurrent : 0|16@1+ (1,0) [0|0] "A" Vector__XXX
+ SG_ pIn_OTC_WarningTimeout : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ pIn_OTC_ErrorTimeout : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ pIn_OTC_RecoveryTimeout : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ pIn_OTC_WarningTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OTC_ErrorTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OTC_RecoveryTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OTD_WarningTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OTD_ErrorTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OTD_RecoveryTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTC_WarningTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTC_ErrorTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTC_RecoveryTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTD_WarningTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTD_ErrorTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_UTD_RecoveryTemperature : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_OV_RecoveryVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ pIn_OV_ErrorVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ pIn_OV_WarningVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ pIn_UV_RecoveryVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ pIn_UV_ErrorVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ pIn_UV_WarningVoltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ cbIn_BalMinThreshold : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ cbIn_BalMaxAllowed_Imbalance : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ cbIn_BalOVProtect_Threshold : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ cbIn_BalStateRestPeriod : 0|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ Max_Allowed_Cell_Voltage : 0|16@1+ (1,0) [0|4150] "mV" Vector__XXX
+ SG_ Max_Allowed_Pack_Voltage : 0|16@1+ (1,0) [0|83] "V" Vector__XXX
+ SG_ Max_Allowed_Cell_Temperature : 0|16@1+ (1,0) [0|50] "C" Vector__XXX
+ SG_ Max_Allowed_Current : 0|16@1+ (1,0) [0|200] "A" Vector__XXX
+ SG_ Derated_Discharge_Current : 0|16@1+ (0.1,0) [0|655.35] "A" Vector__XXX
+ SG_ Derated_Charge_Current : 0|16@1+ (0.1,0) [0|655.35] "A" Vector__XXX
+ SG_ ccm_occ2Reg : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_occ1Reg : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccIn_VehicleRest_Time : 0|16@1+ (1,0) [0|0] "s" Vector__XXX
+ SG_ ccIn_Max_CellCapacity : 0|16@1+ (1,0) [0|0] "Ah" Vector__XXX
+ SG_ ccOut_Terminal_Voltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ ccOut_EKF_Voltage : 0|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ ccOut_EKF_Capacity : 0|32@1- (1,0) [-2147483648|2147483647] "mAh" Vector__XXX
+ SG_ ccOut_EKF_SOC_Pct : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Charging_State : 0|8@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Charging_Current : 0|16@0+ (0.1,0) [0|180] "A" Vector__XXX
+ SG_ Charging_Voltage : 0|16@0+ (0.1,0) [0|100] "V" Vector__XXX
+
+BO_ 829 DynamicCurrents: 8 Vector__XXX
+ SG_ dynamicCurrentCont_Discharging : 48|16@1- (1,0) [-1000|1000] "" Vector__XXX
+ SG_ dynamicCurrentCont_Charging : 32|16@1- (1,0) [-1000|1000] "" Vector__XXX
+ SG_ dynamicCurrentInst_MBD : 16|16@1- (1,0) [-1000|1000] "A" Vector__XXX
+ SG_ dynamicCurrentCont_MBD : 0|16@1- (1,0) [-1000|1000] "A" Vector__XXX
+
+BO_ 298 Dynamic_Limits: 7 Vector__XXX
+ SG_ ConfigID : 48|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ FW_Version : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ dynamicLimit_OUT : 16|16@1- (0.1,0) [0|0] "A" Vector__XXX
+ SG_ dynamicLimit_IN : 0|16@1- (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 831 Temp_Error_Types: 5 Vector__XXX
+ SG_ ErrorTypeGroup5 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorTypeGroup4 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorTypeGroup3 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorTypeGroup2 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ ErrorTypeGroup1 : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 830 TempGroups: 6 Vector__XXX
+ SG_ TempGroup5 : 40|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempGroup4 : 32|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempGroup3 : 24|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempGroup2 : 16|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempGroup1 : 8|8@1- (1,0) [0|0] "" Vector__XXX
+ SG_ TempOverallState : 0|8@1- (1,0) [0|0] "" Vector__XXX
+
+BO_ 279 CE_CMU2_Cell_Voltages_5_to_8: 8 Vector__XXX
+ SG_ CMU2_Cell_Voltage_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 827 AL_ccOutput_Rem_Cap: 8 Vector__XXX
+ SG_ ccOut_Total_Cap_Remaining : 32|32@1- (1,0) [-2147483648|2147483647] "mAh" Vector__XXX
+ SG_ ccOut_Total_Cap_Charg_Discharge : 0|32@1- (1,0) [-2147483648|2147483647] "mAh" Vector__XXX
+
+BO_ 299 AH_CCM_CMU_Counter: 8 Vector__XXX
+ SG_ crc_error_count_6815 : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ crc_error_count_2949 : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ mcu_counter : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_reset_counter : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 826 AI_CCM_Data_Timebase_StatusReg: 8 Vector__XXX
+ SG_ ccm_tbReg : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_faultsReg : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_opctrlReg : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_statusReg : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccm_timebase : 0|32@1+ (0.1,0) [0|429496729.5] "s" Vector__XXX
+
+BO_ 820 CK_pIn_Current_and_OCC: 8 Vector__XXX
+ SG_ pIn_OCC_ErrorCurrent : 48|16@1+ (1,0) [0|0] "A" Vector__XXX
+ SG_ pIn_OCC_WarningCurrent : 32|16@1+ (1,0) [0|0] "A" Vector__XXX
+ SG_ pIn_Current : 0|32@1- (0.01,0) [-1000|1000] "A" Vector__XXX
+
+BO_ 819 CJ_pIn_Temp_17_To_20_Max_Min: 8 Vector__XXX
+ SG_ pIn_IsChargeEnable : 56|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_Delta : 48|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_Min : 40|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_Max : 32|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_20 : 24|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_19 : 16|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_18 : 8|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_17 : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 818 CI_pIn_Temp_9_To_16: 8 Vector__XXX
+ SG_ pIn_Temp_16 : 56|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_15 : 48|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_14 : 40|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_13 : 32|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_12 : 24|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_11 : 16|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_10 : 8|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_9 : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 817 CH_pIn_Temp_1_To_8: 8 Vector__XXX
+ SG_ pIn_Temp_8 : 56|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_7 : 48|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_6 : 40|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_5 : 32|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_4 : 24|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_3 : 16|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_2 : 8|8@1+ (1,0) [0|0] "C" Vector__XXX
+ SG_ pIn_Temp_1 : 0|8@1+ (1,0) [0|0] "C" Vector__XXX
+
+BO_ 816 CG_pIn_Voltage_Max_Min: 8 Vector__XXX
+ SG_ pIn_Voltage_Delta : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ pIn_Voltage_Min : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ pIn_Voltage_Max : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 280 CF_CMU2_Cell_Voltages_9_to_12: 8 Vector__XXX
+ SG_ CMU2_Cell_Voltage_12 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_11 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_10 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 278 CD_CMU2_Cell_Voltages_1_to_4: 8 Vector__XXX
+ SG_ CMU2_Cell_Voltage_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU2_Cell_Voltage_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 277 CC_CMU1_Cell_Voltages_9_to_12: 8 Vector__XXX
+ SG_ CMU1_Cell_Voltage_12 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_11 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_10 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_9 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 276 CB_CMU1_Cell_Voltages_5_to_8: 8 Vector__XXX
+ SG_ CMU1_Cell_Voltage_8 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_7 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_6 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_5 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 275 CA_CMU1_Cell_Voltages_1_to_4: 8 Vector__XXX
+ SG_ CMU1_Cell_Voltage_4 : 48|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_3 : 32|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_2 : 16|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+ SG_ CMU1_Cell_Voltage_1 : 0|16@1+ (0.1,0) [3100|4200] "mV" Vector__XXX
+
+BO_ 810 ZC_cbOut_BalancingCommand15To20: 8 Vector__XXX
+ SG_ cbOut_BalCommand_20 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_19 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_18 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_17 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_16 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_15 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 809 ZB_cbOut_BalancingCommand7To14: 8 Vector__XXX
+ SG_ cbOut_BalCommand_14 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_13 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_12 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_11 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_10 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_9 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_8 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_7 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 808 ZA_cbOut_BalancingCommand1To6: 8 Vector__XXX
+ SG_ cbOut_BalCommand_6 : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_5 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_4 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_3 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_2 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalCommand_1 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbOut_BalState : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cbIn_Cell_InSeries : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 806 BD_cOut_Contactor_State: 8 Vector__XXX
+ SG_ cOut_PreChargeContactor_State : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cOut_PosContactor_State : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cOut_NegContactor_State : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 805 BC_cIn_ContactorFB_Command: 8 Vector__XXX
+ SG_ cIn_ContactorCutOffTime : 48|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ cIn_ResponceTime : 32|16@1+ (1,0) [0|0] "ms" Vector__XXX
+ SG_ cIn_ContactorCommand : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_PreChargeContactor_FB : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_PosContactor_FB : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_NegContactor_FB : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 804 BB_cIn_Flags_Current_Voltage: 8 Vector__XXX
+ SG_ cIn_HighImbalance_Flag : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_TemperatureGradient : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_PreChargeCurrent : 40|8@1+ (1,0) [0|0] "mA" Vector__XXX
+ SG_ cIn_ContactorFail_Flag : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_PermanentFail_Flag : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_ShortCircuit_Flag : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_Communication_Flag : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_ThermalRunaway : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 803 BA_cIn_pOut_Values: 8 Vector__XXX
+ SG_ cIn_pOut_OV : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_UV : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_UTD : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_UTC : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_OTD : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_OTC : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_OCD : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ cIn_pOut_OCC : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 802 AK_ccOutput: 8 Vector__XXX
+ SG_ ccOut_Initial_Capacity : 32|32@1- (1,0) [-2147483648|2147483647] "mAh" Vector__XXX
+ SG_ ccOut_CC_State : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccOut_CC_SOC_Pct : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 800 AJ_ccInput: 8 Vector__XXX
+ SG_ ccIn_Rest_Current : 56|8@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ ccIn_Voltage : 8|16@1+ (0.1,0) [0|0] "mV" Vector__XXX
+ SG_ ccIn_pOut_OVThreshold : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ccIn_Current : 24|32@1- (0.01,0) [-1000|1000] "mA" Vector__XXX
+
+BO_ 274 AG_PCa_And_Temperature_Info: 8 MARVEL_3WL5_CAN_V0_3
+ SG_ Pack_Capacity : 48|16@1- (0.1,0) [-3276.8|3276.7] "Ah" Vector__XXX
+ SG_ Thermistor_6 : 40|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_5 : 32|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_4 : 24|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_3 : 16|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_2 : 8|8@1+ (1,0) [0|255] "C" Vector__XXX
+ SG_ Thermistor_1 : 0|8@1+ (1,0) [0|255] "C" Vector__XXX
+
+BO_ 272 XB_Batt_Param_3: 8 MARVEL_3WL5_CAN_V0_3
+ SG_ Balancing_Limit : 0|16@1+ (0.1,0) [0|4200] "mV" Vector__XXX
+ SG_ Pack_Current : 32|32@1- (0.01,0) [-1000|1000] "mA" Vector__XXX
+ SG_ Flag_Balancing_Active : 24|8@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Flag_Precharge_Active : 16|8@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 265 XA_Batt_Param_2: 8 MARVEL_3WL5_CAN_V0_3
+ SG_ BMS_State : 32|8@1+ (1,0) [0|5] "" Vector__XXX
+ SG_ Flag_Fully_Charged : 40|8@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Pack_Voltage : 48|16@1+ (0.1,0) [60|85] "V" Vector__XXX
+ SG_ SoH : 16|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+ SG_ SoC : 0|16@1+ (0.01,0) [0|100] "%" Vector__XXX
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ BO_ 274 "PCa - Pack Capacity, And Temperatures.
+1-4 are external NTC 1-4 of slave one
+5-6 are external NTC 1-2 of slave two";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "BusType" "CAN";
+

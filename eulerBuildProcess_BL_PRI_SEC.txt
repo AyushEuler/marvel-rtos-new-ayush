@@ -1,0 +1,9 @@
+//Commands to Follow to Build Code - Windows
+
+$env:path+=";C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10\bin"
+rm .\Build\
+A
+mkdir Build
+cd .\Build\
+cmake -G "Unix Makefiles" --toolchain ../arm-none-eabi-gcc.cmake -DCMAKE_BUILD_TYPE=Debug ..
+cmake --build . -- -j12
