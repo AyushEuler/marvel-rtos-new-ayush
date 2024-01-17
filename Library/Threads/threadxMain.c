@@ -795,6 +795,8 @@ void entry_collectBatteryData(ULONG threadInput)
 
     while(1)
     {
+        uint32_t timerr = HAL_GetTick();
+        if(timerr<0) break;
         // uint32_t TX_Mailbox;
         #ifdef DHT11_SENSOR
             dht11(&humid,&temp);
@@ -808,7 +810,7 @@ void entry_collectBatteryData(ULONG threadInput)
         
         //don't take readings while balancing
         if((cbOutputData.balancingState == 0) || (cbOutputData.balancingState == 1))
-        {
+        {   
             RETRY(RETRY_CMU_READ, status, readCellVoltages(&mdata));
             RETRY(RETRY_CMU_READ, status, readCellTemperatures(&mdata));
             RETRY(RETRY_CMU_READ, status, readPackStatus(&mdata));
@@ -830,6 +832,8 @@ void entry_collectBatteryData(ULONG threadInput)
             RETRY(RETRY_CCM_READ, status, readChargeEnergyData(&mdata));
             // RETRY(RETRY_CCM_READ, BMS_ERROR , readPackVoltageCurrent(&mdata));
             // RETRY(RETRY_CCM_READ, BMS_ERROR , readChargeEnergyData(&mdata));
+            uint32_t dur = HAL_GetTick()- timerr;
+            printf("%ld", dur);
         }
         else
         {
