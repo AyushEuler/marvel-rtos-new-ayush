@@ -27,7 +27,7 @@
 // #define ADS1120     /* External 16 Bit ADC for current sensing*/
 
 #define CAN_MATRIX_V_0_3            // 3WL5 CAN v0.3
-// #define CAN_CHARGER_EXTENDED_ID
+#define CAN_CHARGER_EXTENDED_ID
 // #define SOC_IN_FLASH
 
 
@@ -396,11 +396,10 @@
         for (retryCount = 0; retryCount < RETRY_MAX_COUNT; retryCount++) \
         { \
             RETRY_STATUS = CODE_BLOCK; \
+            if (RETRY_STATUS == BMS_OK) \
+                break; \
         } \
     } while (0) 
-
-            // if (RETRY_STATUS == BMS_OK) \
-            //     break; \
 
 #define RETRY_PRIORITY_ZERO         5
 #define RETRY_PRIORITY_ONE          4

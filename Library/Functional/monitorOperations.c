@@ -102,8 +102,7 @@ bmsStatus_t readCellVoltages(bmsMainData_t *mdata)
     status = adBms6815_read_cell_voltages(mdata->cmuData.cmuCount, mdata->cmuData.cmuCellData);
 	CHECK_STATUS(status);
 	status = checkPackVoltages(mdata);
-	//return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/
@@ -129,8 +128,7 @@ bmsStatus_t readCellTemperatures(bmsMainData_t *mdata)
 	CHECK_STATUS(status);
 	status = checkPackTemperatures(mdata);
 
-	// return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/
@@ -185,8 +183,7 @@ bmsStatus_t readPackStatus(bmsMainData_t *mdata)
 		}
 	}
 
-	// return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/
@@ -377,8 +374,7 @@ bmsStatus_t readStatusFaultReg(bmsMainData_t *mdata)
 	mdata->ccmData.occ2Reg 		= tempOcc2Reg;
 
 	status = BMS_OK;
-	// return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/
@@ -449,8 +445,7 @@ bmsStatus_t readPackVoltageCurrent(bmsMainData_t *mdata)
 	mdata->ccmData.packFastCurrent = LTC_3BytesToInt32(buffI2) * LTC2949_LSB_I2;				//A
 	mdata->ccmData.packFastCurrent = mdata->ccmData.packFastCurrent / CONVERT_MICRO_OHM_TO_OHM(SHUNT_RESISTOR_uOhm);
 
-	// return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/
@@ -502,8 +497,7 @@ bmsStatus_t readChargeEnergyData(bmsMainData_t *mdata)
 		mdata->ccmData.isCCMReset = 1;
 	}
 
-	// return status;
-	return BMS_ERROR;
+	return status;
 }
 
 /* Function definition -------------------------------------------------------*/

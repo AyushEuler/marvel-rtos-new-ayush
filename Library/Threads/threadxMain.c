@@ -1495,7 +1495,7 @@ bmsStatus_t dataPipelineInput(bmsMainData_t *mdata, dataPipelineInput_t *dpInput
     
     #ifdef FUNCTIONALTESTS
         //choose the test to be performed from the enum
-    functionalTests(temperatureGradient , mdata);
+        functionalTests(temperatureGradient , mdata);
 #endif
             
     dpInput->current = CONVERT_AMPERE_TO_MILLI_AMPERE(mdata->ccmData.packCurrent);        //milli Ampere
@@ -1580,8 +1580,8 @@ bmsStatus_t dataPipelineInput(bmsMainData_t *mdata, dataPipelineInput_t *dpInput
     //To Do: copy it using separate function
     // mdata->socData.estimatedSoC     = ccOutput->SOC_pct;
 
-    switch(bmsInTestingFlag)
-    // switch(1)
+    // switch(bmsInTestingFlag)
+    switch(1)
     {
         // case 0: //BMS not in Testing
         // break;
